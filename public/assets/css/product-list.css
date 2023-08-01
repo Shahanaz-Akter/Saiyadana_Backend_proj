@@ -1,0 +1,227 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+.bestofElectronic_Contianer {
+  margin: 0 8px;
+  width: 100vw;
+  overflow: hidden;
+  height: 350px;
+  /* border-bottom:1px solid #000; */
+}
+.bestofElectronicmoreOption {
+  height: 120px;
+  max-width: 200%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  /* border:1px solid red; */
+}
+.bestofElectronicmoreOption img {
+  height: 100%;
+  width: 100%;
+}
+.BestofElectronic_item {
+  background-color: white;
+  min-width: 210px;
+  max-width: 210px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  
+}
+.viewAllBtn {
+  background-color: #2874f0;
+  padding: 6px 16px;
+  border-radius: 3px;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+.bestofElectronic_bigText {
+  font-size: 30px;
+  text-align: center;
+  margin: 60px 0px 30px 0px;
+}
+.bestofElectronic_list {
+display: flex;
+}
+.bestOfElectornic_image_Product {
+  height: max-content;
+  text-align: center;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.bestOfElectornic_image_Product img {
+  width: 80%;
+  max-height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestofElectornicProduct_name {
+  font-size: 15px;
+  padding: 0px;
+  letter-spacing: 0.5px;
+}
+.bestofElecronic_discount {
+  color: #388e3c;
+}
+.bestofElectronic_brand {
+  color: rgb(143, 136, 136);
+  font-size: 15px;
+}
+
+.bestofElctronic_product_item {
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+  
+}
+.bestofElectornicProduct_name {
+  color: #000;
+}
+.bestOfElectornic_image_Product:hover img {
+transform: scale(1.1);
+}
+.card-product-main-container{
+  display: flex;
+}
+.card-btn{
+  position: absolute;
+  padding: 20px 10px;
+  height: 120px;
+  font-size: 2rem;
+  margin: auto 0;
+  background-color: white;
+  border: none;
+  box-shadow: -2px -2px 5px rgb(0, 0 ,0 ,0.1),
+  2px 2px 5px rgb(0, 0 ,0 ,0.1);
+  border-radius: 5px;
+  z-index: 3;
+}
+.card-btn-display {
+display: none;
+}
+.card-btn-container{
+  position: relative;
+  margin: auto;
+  top: -40px;
+}
+#card-btn-right-1{
+  /* margin-left: -600px; */
+  margin-left: -1040px;
+}
+#card-btn-left-1{
+display: none;
+}
+#card-btn-right-2{
+  margin-left: -1040px;
+}
+#card-btn-left-2{
+display: none;
+}
+#card-btn-right-3{
+  margin-left: -1040px;
+}
+#card-btn-left-3{
+display: none;
+}
+#card-btn-right-4{
+  margin-left: -1040px;
+}
+#card-btn-left-4{
+display: none;
+}
+#card-btn-right-5{
+  margin-left: -1040px;
+}
+#card-btn-left-5{
+display: none;
+}
+#card-btn-right-6{
+  margin-left: -680px;
+}
+#card-btn-left-6{
+display: none;
+}
+#card-btn-right-7{
+  margin-left: -680px;
+}
+#card-btn-left-7{
+display: none;
+}
+#card-btn-right-8{
+  margin-left: -680px;
+}
+#card-btn-left-8{
+display: none;
+}
+#card-btn-right-9{
+  margin-left: -680px;
+}
+#card-btn-left-9{
+display: none;
+}
+#card-btn-right-10{
+  margin-left: -680px;
+}
+#card-btn-left-10{
+display: none;
+}
+#card-btn-right-11{
+  margin-left: -680px;
+}
+#card-btn-left-11{
+display: none;
+}
+
+@media(max-width: 458px) {
+  
+  #card-btn-right-1{
+    /* margin-left: -600px; */
+    margin-left: -1980px;
+  }
+  #card-btn-right-2{
+    /* margin-left: -600px; */
+    margin-left: -1980px;
+  }
+  #card-btn-right-3{
+    /* margin-left: -600px; */
+    margin-left: -1980px;
+  }
+  #card-btn-right-4{
+    /* margin-left: -600px; */
+    margin-left: -1980px;
+  }
+ #Item{
+  display: none;
+ }
+ #Item-2{
+  display: none;
+ }
+ #Item-3{
+  display: none;
+ }
+ #Item-4{
+  display: none;
+ }
+ .bestofElctronic_product_item img{
+  width: 50%;
+ }
+ .bestOfElectornic_image_Product {
+padding: 0px; 
+}
+
+}

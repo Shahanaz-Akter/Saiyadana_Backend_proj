@@ -20,12 +20,10 @@
                         <div class="row">
                             <div class="col-12">
 
-
-
                                 <div class="d-flex justify-content-end mb-3">
 
                                     <span class="me-2">
-                                        <p class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#add_category">Add Super Category<i class="fa fa-3x fa-plus ms-2" style="font-size: 16px;"></i></p>
+                                        <p class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#super_category">Add Super Category<i class="fa fa-3x fa-plus ms-2" style="font-size: 16px;"></i></p>
                                     </span>
 
                                     <span class="me-2">
@@ -39,7 +37,7 @@
 
                                 </div>
                                 <div class=" text-center p-2" style="font-size: 20px;">All Products List</div>
-                                <hr>
+                                <!-- <hr> -->
 
                                 <div class="table-responsive">
                                     <table class="table mb-0">
@@ -47,144 +45,122 @@
                                             <tr class="">
                                                 <th>#</th>
                                                 <th>Super Category Name</th>
-                                                <th>Sub category</th>
-                                                <th>Product Name</th>
+                                                <th>Super Category Image</th>
+                                                <th>Sub category Name</th>
+                                                <th>Sub category Primary Name</th>
+                                                <th>Sub category Secondary Name</th>
+                                                <th>Price</th>
+                                                <th>SKU</th>
                                                 <th>Regular Price</th>
                                                 <th>Discount Price</th>
+                                                <th>Entry Date</th>
+                                                <th>Expired Date</th>
                                                 <th>Stock Availability</th>
                                                 <th>Brands</th>
                                                 <th>Capacity</th>
                                                 <th>UPC Code</th>
+                                                <th>Description</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
 
                                             <tr>
-                                                <th scope="row">1</th>
+                                                <th>1</th>
+                                                <td>Ecommerce</td>
+                                                <td><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px"></td>
+                                                <td>Camera</td>
+                                                <td><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px"></td>
+
+                                                <td class="position-relative">
+                                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px">
+                                                    <a href="{{url('/view_more')}}" class="">
+                                                        <button class="position-absolute mt-2 btn btn-sm btn-primary" style="top: 5%; left: 20%;">View More</button>
+                                                    </a>
+                                                </td>
+                                                <td>300</td>
+                                                <td>34500</td>
+                                                <td>20000/=</td>
+                                                <td>18000/=</td>
+                                                <td>04-6-23</td>
+                                                <td>07-6-23</td>
+
+                                                <td>Stock-In</td>
+                                                <td>Ryans</td>
+                                                <td>2000mg</td>
+                                                <td>5656</td>
+                                                <td>Lorem ipsum mula khabe</td>
+                                                <td>
+                                                    <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
+                                                    <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>1</th>
                                                 <td>Electronics</td>
-                                                <td>Desktop</td>
-                                                <td>Monitor</td>
-                                                <td>20000/=</td>
-                                                <td>18000/=</td>
-                                                <td>Stock-In</td>
-                                                <td>Samsung</td>
-                                                <td>20L</td>
-                                                <td>56655656</td>
-                                                <td>
-                                                    <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
-                                                    <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
+                                                <td><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px"></td>
+                                                <td>Computer</td>
+                                                <td><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px"></td>
+
+                                                <td class="position-relative">
+                                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px">
+                                                    <a href="{{url('/view_more')}}" class="">
+                                                        <button class="position-absolute mt-2 btn btn-sm btn-primary" style="top: 5%; left: 20%;">View More</button>
+                                                    </a>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Fashion</td>
-                                                <td>Women</td>
-                                                <td>Saree</td>
+                                                <td>300</td>
+                                                <td>34500</td>
                                                 <td>20000/=</td>
                                                 <td>18000/=</td>
+                                                <td>04-6-23</td>
+                                                <td>07-6-23</td>
+
                                                 <td>Stock-In</td>
-                                                <td>Samsung</td>
-                                                <td>20L</td>
-                                                <td>56655656</td>
-                                                <td>
-                                                    <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
-                                                    <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Home</td>
-                                                <td>Mug</td>
-                                                <td>lal Mug</td>
-                                                <td>20000/=</td>
-                                                <td>18000/=</td>
-                                                <td>Stock-In</td>
-                                                <td>Samsung</td>
-                                                <td>20L</td>
-                                                <td>56655656</td>
+                                                <td>Ryans</td>
+                                                <td>2000mg</td>
+                                                <td>5656</td>
+                                                <td>Lorem ipsum aut at!</td>
                                                 <td>
                                                     <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
                                                     <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
                                                 </td>
                                             </tr>
 
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Appliances</td>
-                                                <td>janina</td>
-                                                <td>Monitor</td>
-                                                <td>20000/=</td>
-                                                <td>18000/=</td>
-                                                <td>Stock-In</td>
-                                                <td>Samsung</td>
-                                                <td>20L</td>
-                                                <td>56655656</td>
-                                                <td>
-                                                    <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
-                                                    <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
 
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Two Wheels</td>
-                                                <td>Car</td>
-                                                <td>Red car</td>
-                                                <td>20000/=</td>
-                                                <td>18000/=</td>
-                                                <td>Stock-In</td>
-                                                <td>Samsung</td>
-                                                <td>20L</td>
-                                                <td>56655656</td>
-                                                <td>
-                                                    <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
-                                                    <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">1</th>
+                                                <th>1</th>
                                                 <td>Clothes</td>
-                                                <td>Men</td>
-                                                <td>shirt</td>
+                                                <td><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px"></td>
+                                                <td>Scart</td>
+                                                <td><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px"></td>
+
+                                                <td class="position-relative">
+                                                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Not Available" height="auto" width="150px">
+                                                    <a href="{{url('/view_more')}}" class="">
+                                                        <button class="position-absolute mt-2 btn btn-sm btn-primary" style="top: 5%; left: 20%;">View More</button>
+                                                    </a>
+                                                </td>
+                                                <td>300</td>
+                                                <td>34500</td>
                                                 <td>20000/=</td>
                                                 <td>18000/=</td>
+                                                <td>04-6-23</td>
+                                                <td>07-6-23</td>
+
                                                 <td>Stock-In</td>
-                                                <td>Samsung</td>
-                                                <td>20L</td>
-                                                <td>56655656</td>
+                                                <td>Ryans</td>
+                                                <td>2000mg</td>
+                                                <td>5656</td>
+                                                <td>Lorem ipsum aut at!</td>
                                                 <td>
                                                     <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
                                                     <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
                                                 </td>
                                             </tr>
-
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Groceries</td>
-                                                <td>Cream</td>
-                                                <td>Monitor</td>
-                                                <td>2000/=</td>
-                                                <td>1200/=</td>
-                                                <td>Stock-In</td>
-                                                <td>Samsung</td>
-                                                <td>20L</td>
-                                                <td>56655656</td>
-                                                <td>
-                                                    <a href="{{url('/edit_products')}}"><i class="fa-solid fa-pen-to-square ms-2" data-bs-toggle="modal" data-bs-target="#edit"></i></a>
-                                                    <a href="{{url('/delete_products/')}}"><i class="fa-solid fa-trash-can"></i></a>
-                                                </td>
-                                            </tr>
-
-
-
                                         </tbody>
                                     </table>
                                 </div>
-
-                                <br><br><br>
-
-
                             </div>
                         </div>
                     </div>
@@ -197,8 +173,9 @@
     </div>
 
 
-    <!-- Category Modal start -->
-    <div class="modal fade" id="add_category" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <!-- Super Category Modal start -->
+    <div class="modal fade" id="super_category" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog ">
             <div class="modal-content">
                 <div class="modal-header">
@@ -207,67 +184,135 @@
                 </div>
 
                 <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="category_name" class="form-label">Super Category Name</label>
-                        <!-- <select class="form-select" aria-label="Default select example" name="category_name">
-                                        <option selected>Open this select menu</option>
-                                        <option value="Computer">Computer</option>
-                                        <option value="Android">Android</option>
-                                        <option value="Radio">Radio</option>
-                                    </select> -->
 
-                        <select class="form-select" aria-label="Default select example" name="category_name">
-                            <option value="null" selected>Select</option>
-                            <option value="fashion">Fashion</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="clothes">Clothes</option>
-                            <option value="appliances">Appliances</option>
-                            <option value="beauty_and_toys">Beauty and Toys</option>
-                            <option value="groceries">Groceries</option>
-                            <option value="shoes">Shoes</option>
-                            <option value="top_offers">Top Offers</option>
-                            <option value="two_wheel">Two Wheel</option>
-                        </select>
-                        <!-- <input type="text" class="form-control" id="category_name" placeholder="Enter category Name:"> -->
-                        <!-- <input type="text" class="form-control" id="category_name" placeholder="Enter Category Name:"> -->
-                    </div>
-                    <div class="mb-3">
-                        <label for="upc" class="form-label">Unicode/(UPC)</label>
-                        <input type="text" class="form-control" id="upc" placeholder="Enter UPC Code:">
-                    </div>
+                    <form action="{{url('/post_super_category')}}" method="POST" enctype="multipart/form-data">
+                        @csrf
+
+                        <div class="mb-3">
+                            <label for="super_category_name" class="form-label mb-2">Super Category</label>
+
+
+                            <select class="form-select" name="super_category_name" id="type_1">
+                                <option value="null" selected>Select</option>
+                                <option value="ecommerce">Ecommerce</option>
+                                <option value="fashion">Fashion</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothes">Clothes</option>
+                                <option value="appliances">Appliances</option>
+                                <option value="beauty_and_toys">Beauty and Toys</option>
+                                <option value="groceries">Groceries</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="top_offers">Top Offers</option>
+                                <option value="two_wheel">Two Wheel</option>
+                            </select>
+                            <!-- <input type="text" class="form-control" id="category_name" placeholder="Enter category Name:"> -->
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <label for="super_category_image" class="mb-2">Super Category Image</label>
+                            <input type="file" id="super_category_image" name="super_category_image">
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="unicode mb-2" class="form-label">Unicode/(UPC)</label>
+                            <input type="text" class="form-control" id="unicode" placeholder="Enter UPC Code:" name="unicode">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                    </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <!-- <button type="button" class="btn btn-primary">Submit</button> -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Category Modal end -->
-
+    <!-- Super Category Modal end -->
 
     <!-- Sub Category Modal start -->
     <div class="modal fade" id="sub_category" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog ">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Sub Category</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Sub Category Selection</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
                 <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="sub_category_name" class="form-label">Sub Category</label>
-                        <input type="text" class="form-control" id="sub_category_name" placeholder="Enter category Name:">
-                    </div>
-                    <div class="mb-3">
-                        <label for="upc" class="form-label">Unicode/(UPC)</label>
-                        <input type="text" class="form-control" id="upc" placeholder="Enter UPC Code:">
-                    </div>
+
+                    <form action="{{url('/post_sub_category')}}" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="sub_category_primary_image" class="mb-2">Sub Category Primary Image</label>
+                                <input type="file" id="sub_category_primary_image" name="sub_category_primary_image">
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="sub_category_secondary_image" class="mb-2">Sub Category Secondary Image</label>
+                                <input type="file" id="sub_category_secondary_image" name="sub_category_secondary_image[]" multiple>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="sub_category_name" class="form-label">Sub Category Name</label>
+                                <input type="text" class="form-control" id="sub_category_name" placeholder="Enter Sub Category" name="sub_category_name">
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="text" class="form-control" id="price" placeholder="Enter price Code:" name="price">
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="sku_code" class="form-label">SKU Code</label>
+                                <input type="text" class="form-control" id="sku_code" placeholder="Enter SKU Code:" name="sku_code">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="entry_date" class="form-label">Entry Date</label>
+                                <input type="date" class="form-control" id="entry_date" placeholder="Enter Entry Date:" name="entry_date">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="expire_date" class="form-label">Expired Date</label>
+                                <input type="date" class="form-control" id="expire_date" placeholder="Enter Expired Date:" name="expire_date">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="regular_price" class="form-label">Regular Price</label>
+                                <input type="text" class="form-control" id="regular_price" placeholder="Enter Regular Price:" name="regular_price">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="discount_price" class="form-label">Discount Price</label>
+                                <input type="text" class="form-control" id="discount_price" placeholder="Enter Discount Price:" name="discount_price">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control" id="description" cols="" rows="" name="description"></textarea>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-3">
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
+
+
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <!-- <button type="button" class="btn btn-primary">Submit</button> -->
                 </div>
             </div>
         </div>

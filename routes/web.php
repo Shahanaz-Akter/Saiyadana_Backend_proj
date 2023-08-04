@@ -38,6 +38,14 @@ Route::controller(App\Http\Controllers\Otp\OtpController::class)->group(function
 });
 
 
+// Product controller
+Route::controller(App\Http\Controllers\ProductController::class)->group(function () {
+    Route::get('/post_super_category', 'post_super_category')->name('post_super_category');
+    Route::get('/ecommerce_dashboard', 'ecommerce_dashboard')->name('ecommerce_dashboard');
+    Route::post('/post_super_category', 'post_super_category')->name('post_super_category');
+    Route::post('/post_sub_category', 'post_sub_category')->name('post_sub_category');
+});
+
 // start different shop
 Route::get('/ecommerce_shop', function () {
     return view('Userview.ecommerce_shop');
@@ -81,9 +89,10 @@ Route::get('/two_wheels_shop', function () {
 Route::get('/admin_dashboard', function () {
     return view('Adminview.Super_admin.admin_dashboard');
 });
-Route::get('/ecommerce_dashboard', function () {
-    return view('Adminview.Inventory.Ecommerce.master_branch');
-});
+
+// Route::get('/ecommerce_dashboard', function () {
+//     return view('Adminview.Inventory.Ecommerce.master_branch');
+// });
 
 Route::get('/electronics_dashboard', function () {
     return view('Adminview.Inventory.Electronics.master_branch');

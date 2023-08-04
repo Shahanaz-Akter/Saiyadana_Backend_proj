@@ -16,20 +16,20 @@ return new class extends Migration
 
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('super_category_name');
-            $table->string('super_category_image');
-            $table->string('unicode');
-            $table->string('sub_category_name');
-            $table->string('sub_category_primary_image');
-            $table->json('sub_category_secondary_image');
-            $table->string('price');
-            $table->string('sku_code');
-            $table->date('entry_date');
-            $table->date('expire_date');
-            $table->bigInteger('regular_price');
-            $table->bigInteger('discount_price');
-            $table->string('description', 2000);
+            $table->string('super_category_name')->nullable();
+            $table->string('super_category_image')->nullable();
+            $table->string('unicode')->nullable();
 
+            $table->string('sub_category_name')->nullable();
+            $table->string('sub_category_primary_image')->nullable();
+            $table->json('sub_category_secondary_image')->nullable();
+            $table->string('price')->nullable();
+            $table->string('sku_code')->nullable();
+            $table->date('entry_date')->nullable();
+            $table->date('expire_date')->nullable();
+            $table->bigInteger('regular_price')->nullable();
+            $table->bigInteger('discount_price')->nullable();
+            $table->string('description', 2000)->nullable();
             $table->timestamps();
         });
     }
